@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sale</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"> -->
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Javascript Library-->
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+
+    <!-- Custom javascript and css -->
+    <script type="text/javascript" src="js/sell/sale.history.js"></script>
+    <link rel="stylesheet" href="css/sell/sale.history.css">
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="" class="logo">
+                <span class="logo-lg"><b>Sale</b>(POS)</span>
+            </a>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="dist/img/avatar3.png" class="user-image" alt="User Image">
+                                <span class="hidden-xs">Admin</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        Alexander Pierce - Web Developer
+                                        <small>Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Followers</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Sales</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Friends</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">Menu</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li id="login_btn">
+                    <a href="Login.html"><span>Login</span></a></li>
+                <li id="logout_btn">
+                    <a href="Login.html"><span>Logout</span></a></li>
+                <!-- Home -->
+                <li>
+                    <a href="index.html">
+
+                        <span>Home</span>
+                    </a>
+                </li>
+                <!-- Sell -->
+                <li class="treeview">
+                    <a href="#">
+
+                        <span>Sale</span>
+
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="open.close.html">Open / Close</a></li>
+                        <li><a href="sale.history.html">Sale History</a></li>
+                    </ul>
+                </li>
+                <!-- Reporting -->
+                <li class="treeview">
+                    <a href="#"><span>Reporting</span>
+
+					</a>
+                    <ul class="treeview-menu">
+                        <li><a href="retail_chart_report.html">Retail Dashboard</a></li>
+                        <li><a href="#">Register Closure</a></li>
+                        <li><a href="sale_report_table.html">Sale Report</a></li>
+                        <li><a href="inventory_report.html">Inventory Report</a></li>
+                    </ul>
+                </li>
+                <!-- Product -->
+                <li class="treeview">
+                    <a href="#"><span>Product</span>
+					</a>
+                    <ul class="treeview-menu">
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="type.html">Type</a></li>
+                        <li><a href="brand.html">Brand</a></li>
+                        <li><a href="tags.html">Tags</a></li>
+                        <li><a href="supplier.html">Supplier</a></li>
+                    </ul>
+                </li>
+                <!-- Customer -->
+                <li class="treeview">
+                    <a href="#"><span>Customer</span>
+
+					</a>
+                    <ul class="treeview-menu">
+                        <li><a href="customer.html">Customer</a></li>
+                        <li><a href="group.html">Groups</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- This is body area -->
+            <div class="row body" id="body">
+                <!-- This is home -->
+                <div class="col-md-12 content" id="home">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br>
+                            <h4>Find all sales for customer.</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="max-height:500px; overflow:scroll;">
+                        <div class="col-md-12">
+                            <table class="table table-striped">
+                                <thead style="background-color:green; color:white;">
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Receipt</th>
+                                        <th>Sold_By</th>
+                                        <th>Customer</th>
+                                        <th>Note</th>
+                                        <th>Sale_Total</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                    <thread>
+                                        <!-- Here will be show sale history information -->
+                                    </thread>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 3 -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+</body>
+
+</html>
